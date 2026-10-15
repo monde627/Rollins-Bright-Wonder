@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#3566ff">
+<meta name="description" content="Rollins Bright Wonder: Electrical Engineering (Power) student, freelance web developer and digital product creator in Kenya.">
+<meta property="og:title" content="Rollins Bright Wonder | Portfolio">
+<meta property="og:description" content="Engineering power. Building the web.">
+<meta property="og:type" content="website">
+<title>Rollins Bright Wonder</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Rollins Bright Wonder, home"><span class="brand-mark">RW</span><span class="brand-name">Rollins<small>Bright Wonder</small></span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#play">Play</a><a href="#work">Work</a><a class="nav-cta" href="#contact">Say hello</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme"><span aria-hidden="true">◐</span></button>
+    <button class="icon-btn menu-toggle" id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav"><span aria-hidden="true">☰</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="chip chip-live"><i class="dot"></i> Kenya · 50 Hz country</p>
+        <h1>Engineering <span class="hl hl-y">power.</span> Building the <span class="hl hl-b">web.</span></h1>
+        <p class="lead">I'm <strong>Rollins Bright Wonder</strong>. I'm studying Electrical Engineering (Power Option), building websites for clients, and selling digital products online. I like anything I can wire up, code up or ship.</p>
+        <div class="actions"><a class="btn btn-y" href="#work">See what I'm building <span aria-hidden="true">↓</span></a><a class="btn btn-ghost" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+      </div>
+
+      <figure class="scope" aria-label="Animated three-phase power waveform">
+        <figcaption class="scope-top"><span>THREE-PHASE SUPPLY</span><span class="scope-live"><i class="dot"></i> LIVE</span></figcaption>
+        <canvas id="wave" width="640" height="360" role="img" aria-label="Red, yellow and blue sine waves, each 120 degrees apart"></canvas>
+        <div class="scope-legend"><span><i class="sw sw-r"></i>L1 red</span><span><i class="sw sw-y"></i>L2 yellow</span><span><i class="sw sw-b"></i>L3 blue</span></div>
+        <label class="slider" for="hz"><span>Frequency</span><input id="hz" type="range" min="10" max="100" value="50"><output id="hz-out" for="hz">50 Hz</output></label>
+        <p class="scope-note">Phases sit 120° apart. Drag to speed the supply up or slow it down.</p>
+      </figure>
+      <span class="sticker st-1">Diploma, EEE (Power)<br><b>Class of July 2027</b></span>
+      <span class="sticker st-2">Freelance<br><b>web dev</b></span>
+    </section>
+
+    <section class="ticker" aria-hidden="true"><div><span>Power systems</span><b>✦</b><span>Web development</span><b>✦</b><span>Python</span><b>✦</b><span>Cybersecurity</span><b>✦</b><span>Digital products</span><b>✦</b><span>Three-phase</span><b>✦</b><span>Power systems</span><b>✦</b><span>Web development</span><b>✦</b><span>Python</span><b>✦</b><span>Cybersecurity</span><b>✦</b><span>Digital products</span><b>✦</b><span>Three-phase</span><b>✦</b></div></section>
+
+    <section class="block" id="about">
+      <div class="head"><p class="kicker">About me</p><h2>Learning the theory.<br><span class="hl hl-m">Shipping the real thing.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm doing a <strong>Diploma in Electrical and Electronics Engineering (Power Option)</strong> at The Kitale National Polytechnic, graduating in July 2027. I like knowing how a system works before I touch it, then breaking big ideas into parts small enough to build.</p>
+          <p>Outside class I take on freelance web development work and create digital products that I sell online. Most of what I know about code and security came from building things and getting them wrong first.</p>
+        </div>
+        <ul class="facts">
+          <li class="fact f-r"><b>Study</b>Electrical &amp; Electronics Engineering, Power Option</li>
+          <li class="fact f-y"><b>Build</b>Websites for clients, digital products for sale</li>
+          <li class="fact f-b"><b>Explore</b>Python, Linux and cybersecurity basics</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="skills">
+      <div class="head"><p class="kicker">Skills</p><h2>Areas I'm <span class="hl hl-y">growing.</span></h2><p class="sub">Fundamentals first. Real capability over buzzwords.</p></div>
+      <div class="cards">
+        <article class="card c-r"><span class="ico" aria-hidden="true">⚡</span><h3>Electrical Engineering</h3><p>Electrical principles, power systems, three-phase supply, machines, measurements and installation concepts.</p><div class="tags"><span>Power</span><span>Machines</span><span>Circuits</span></div></article>
+        <article class="card c-y"><span class="ico" aria-hidden="true">&lt;/&gt;</span><h3>Web &amp; Programming</h3><p>Responsive websites for real clients, plus programming fundamentals sharpened through exercises and side projects.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span></div></article>
+        <article class="card c-b"><span class="ico" aria-hidden="true">🔒</span><h3>Cybersecurity</h3><p>Security concepts, safer digital habits, Linux environments and hands-on learning labs.</p><div class="tags"><span>Linux</span><span>Networking</span><span>Security basics</span></div></article>
+        <article class="card c-m"><span class="ico" aria-hidden="true">▦</span><h3>Tools &amp; Products</h3><p>Dev tools that keep work organised, and a growing habit of turning skills into digital products people buy.</p><div class="tags"><span>Git &amp; GitHub</span><span>VS Code</span><span>Excel</span></div></article>
+      </div>
+      <p class="note">This portfolio shows my learning journey. I'm still developing these skills and will keep adding projects as I finish them.</p>
+    </section>
+
+    <section class="block" id="play">
+      <div class="head"><p class="kicker">Play</p><h2>Try Ohm's law, <span class="hl hl-b">live.</span></h2><p class="sub">Slide the voltage and resistance. The bulb shows how much power it is really drawing.</p></div>
+      <div class="ohm">
+        <div class="ohm-controls">
+          <label for="volt"><span>Voltage <b id="v-out">240 V</b></span><input id="volt" type="range" min="0" max="240" value="240"></label>
+          <label for="res"><span>Resistance <b id="r-out">240 Ω</b></span><input id="res" type="range" min="20" max="1000" value="240"></label>
+          <p class="formula">I = V ÷ R &nbsp;·&nbsp; P = V × I</p>
+        </div>
+        <div class="ohm-read">
+          <div class="bulb" id="bulb" aria-hidden="true"><svg viewBox="0 0 80 100"><circle id="bulb-glass" cx="40" cy="38" r="26"/><path d="M30 64h20v10H30zM32 78h16M34 84h12" /><path d="M32 40l8 10 8-10" class="fil"/></svg></div>
+          <dl class="readout"><div><dt>Current</dt><dd id="i-out">1.00 A</dd></div><div><dt>Power</dt><dd id="p-out">240 W</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="work">
+      <div class="head"><p class="kicker">Selected work</p><h2>Projects, experiments <span class="hl hl-r">and progress.</span></h2><p class="sub">A growing collection. Starter cards get swapped for live demos and repositories as projects mature.</p></div>
+      <div class="projects">
+        <article class="project p-feature">
+          <div class="pv pv-web" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>rollins.dev</span></div><div class="mock"><b>RW</b><h4>Digital ideas.<br><em>Made real.</em></h4><i class="pill"></i><i class="orb"></i></div></div>
+          <div class="pinfo"><p class="ptype">Web development</p><h3>Personal Portfolio</h3><p>A responsive home for my background, learning journey and selected technical work, built to grow alongside my skills.</p><div class="pfoot"><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="plink" href="https://github.com/monde627/Rollins-Bright-Wonder" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
+        </article>
+        <article class="project">
+          <div class="pv pv-circuit" aria-hidden="true"><svg viewBox="0 0 240 150"><g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path class="s-y" d="M20 40h60M150 40h70v70H150M90 110H20V40"/><path class="s-r" d="M80 28v24l12-6-12-6M92 28v24"/><path class="s-b" d="M100 110h8l6-14 8 28 8-28 8 14h12"/></g><g class="n"><circle cx="20" cy="40" r="5"/><circle cx="220" cy="40" r="5"/><circle cx="20" cy="110" r="5"/></g><text x="112" y="76" class="eq">V = I × R</text></svg></div>
+          <div class="pinfo"><p class="ptype">Electrical engineering</p><h3>Electrical Study Notes</h3><p>Structured notes and worked examples on electrical principles, three-phase systems, machines and measurements.</p><div class="pfoot"><div class="tags"><span>Circuits</span><span>Power</span></div><span class="status">In progress</span></div></div>
+        </article>
+        <article class="project">
+          <div class="pv pv-code" aria-hidden="true"><pre><b>&gt;&gt;&gt;</b> def keep_building():
+    skills = []
+    while learning:
+        skills.append(practice())
+    return skills
+
+<i># progress through practice</i></pre></div>
+          <div class="pinfo"><p class="ptype">Programming</p><h3>Python Learning Lab</h3><p>Small programs and exercises that build logic, problem solving and confidence with code.</p><div class="pfoot"><div class="tags"><span>Python</span><span>Problem solving</span></div><span class="status">In progress</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="approach">
+      <div class="head"><p class="kicker">How I work</p><h2>Curiosity starts it.<br><span class="hl hl-y">Consistency finishes it.</span></h2></div>
+      <ol class="steps"><li><b>Learn the fundamentals</b><span>Know why it works before making it work.</span></li><li><b>Practise with purpose</b><span>Every lesson becomes something I can run or click.</span></li><li><b>Share what works</b><span>Ship it, document it, improve it.</span></li></ol>
+    </section>
+
+    <section class="block" id="contact">
+      <div class="contact">
+        <p class="kicker k-dark">Have a project or an idea?</p>
+        <h2>Let's build something <span class="hl hl-y">useful.</span></h2>
+        <p class="lead2">I'm happy to connect with fellow learners, developers, engineers and anyone with a thoughtful project idea.</p>
+        <ul class="reach">
+          <li><span class="rl">Email</span><a href="mailto:brigtwonder330@gmail.com" id="r-mail">brigtwonder330@gmail.com</a><button class="copy" type="button" data-copy="brigtwonder330@gmail.com">Copy</button></li>
+          <li><span class="rl">Phone / WhatsApp</span><a href="tel:+254790862217" id="r-tel">+254 790 862 217</a><span class="rbtns"><a class="wa" href="https://wa.me/254790862217" target="_blank" rel="noreferrer">WhatsApp ↗</a><button class="copy" type="button" data-copy="+254790862217">Copy</button></span></li>
+          <li><span class="rl">Location</span><span class="rv">Kenya</span></li>
+        </ul>
+        <div class="actions"><a class="btn btn-y" href="https://github.com/monde627/Rollins-Bright-Wonder" target="_blank" rel="noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a><a class="btn btn-wa" href="https://wa.me/254790862217" target="_blank" rel="noreferrer">WhatsApp me <span aria-hidden="true">↗</span></a><a class="btn btn-light" href="https://linkedin.com/in/wonder-bright-20b4b1373/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© <span id="year">2026</span> Rollins Bright Wonder · Made with curiosity in Kenya</span><span class="flinks"><a href="https://github.com/monde627" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/wonder-bright-20b4b1373/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a></span></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
